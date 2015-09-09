@@ -15,5 +15,16 @@ describe('translator', function() {
 	});
 	it("test y in the middle", function() {
 		expect(translator("taylor")).to.equal("aylortay")
-	})
+	});
+	it("test qu", function() {
+		expect(translator("quicky")).to.equal("uickyqay")
+	});
+
+});
+
+
+describe('multipleTranslator', function() {
+	it("multiple words", function() {
+		expect(multipleTranslator("taylor is great")).to.equal("aylortay isay eatgray")
+	});
 });
